@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>后台管理</title>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/pub.css" />
+		<link rel="stylesheet" type="text/css" href="css/p_ordercart_style.css" />
+	</head>
+	<style type="text/css">
+		.weui-grid:after {
+			left: 0;
+			height: 1px;
+			border-bottom: 1px solid #f8f8f8;
+			-webkit-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+			-webkit-transform: scaleY(.5);
+			transform: scaleY(.5);
+		}
+		
+		.weui-grid:before {
+			top: 0;
+			width: 1px;
+			border-right: 1px solid #f8f8f8;
+			-webkit-transform-origin: 100% 0;
+			transform-origin: 100% 0;
+			-webkit-transform: scaleX(.5);
+			transform: scaleX(.5);
+		}
+		
+		.weui-grid {
+			background-color: white;
+			position: relative;
+			float: left;
+			padding: 10px 10px;
+			width: 33.33333333%;
+			box-sizing: border-box;
+		}
+		
+		.weui-footer,
+		.weui-grid__label {
+			text-align: center;
+			font-size: 13px;
+		}
+		
+		.weui-grid__icon {
+			width: 45px;
+			height: 45px;
+		}
+		
+		.prodmenu_box {
+			margin: 15vw 5vw;
+			border: 1px solid #c1c1c1 !important;
+		}
+	</style>
+
+	<body>
+		<!-- 容器 -->
+		<div class="weui-tab cont_dispy_none">
+			<!--nav-->
+			<div class="weui-navbar merchant_nav_fixed">
+				<div class="weui-flex merchant_nav" style="background: white;padding: 8px 8px;">
+					<div class="merchant_nav_con float_lt">
+						<img class="merchant_nav_img heardimg" />
+					</div>
+					<div class="weui-flex__item">
+						<label class="float_lt username text_color_black"></label>
+						<label class="float_rt app_name text_color_black"></label>
+					</div>
+				</div>
+			</div>
+			<!--content-->
+			<div class="weui-tab__bd">
+				<div class="weui-tab__bd-item weui-tab__bd-item--active mag_top_8p">
+					<div class="width_all">
+						<a id="productlist" class="weui-btn weui-btn_plain-default prodmenu_box">
+							商品管理
+						</a>
+						<a id="pubmenu" class="weui-btn weui-btn_plain-default prodmenu_box">
+							系统设置
+						</a>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<span class="cont_dispy_none page_type">4</span>
+	</body>
+	<!--jquery+weui-->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/c_navbar_pub.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/c_homepage_prod.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/c_prod_share.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

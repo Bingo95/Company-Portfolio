@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/pub.css" />
+		<link rel="stylesheet" type="text/css" href="css/c_perporder.css" />
+	</head>
+
+	<body>
+		<div class="weui-tab">
+			<div class="search_box">
+				<div class="weui-cells padding_5">
+					<div class="weui-cell weui-cell_select">
+						<div class="weui-search-bar search_edit" id="searchBar">
+							<div class="weui-search-bar__form">
+								<div class="weui-search-bar__box">
+									<i class="weui-icon-search"></i>
+									<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="请输入要查找的商品" required="">
+									<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+								</div>
+								<label class="weui-search-bar__label" id="searchText">
+      								<i class="weui-icon-search"></i>
+     								<span>请输入要查找的商品</span>
+    							</label>
+							</div>
+						</div>
+						<button href="javascript:" id="search_shop">搜索</button>
+					</div>
+				</div>
+			</div>
+			<div class="weui-tab__bd text_size_15 width_all">
+				<div class="weui-tab__bd-item weui-tab__bd-item--active">
+					<div id="list" class="wrap">
+						<ul id="search_typelist" class="page_left">
+							<li class="active" value="0">全部</li>
+						</ul>
+					</div>
+					<div class="page_right">
+						<!--填充-->
+						<div class="right_div">
+
+						</div>
+						<div id="login_up" class="weui-loadmore float_rt cont_dispy_none">
+							<i class="weui-loading"></i>
+							<span class="weui-loadmore__tips">正在加载</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="cont_dispy_none page_type">2</span>
+	</body>
+	<!--jquery+weui-->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/c_navbar_pub.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/c_prodsearch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/c_prod_share.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
